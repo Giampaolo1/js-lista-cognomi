@@ -21,6 +21,9 @@ lista.push(cognomeutente)
 
 console.log(lista, "lista dopo push");
 
+// e stampa la lista ordinata alfabeticamente.
+lista.sort();
+
 // apro ciclo per assegnare la posizione con index
 var classifica;
 for (var index = 0; index < lista.length; index++){
@@ -29,7 +32,11 @@ for (var index = 0; index < lista.length; index++){
     classifica = index;
     console.log('posizione mio cognome', classifica);
   }
-// }
+}
+
+// e stampa la lista ordinata alfabeticamente.
+lista.sort();
+
 
 // cognomeutente posizione prima di sort
 // console.log(cognomeutente,[index]);
