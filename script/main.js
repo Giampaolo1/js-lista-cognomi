@@ -19,15 +19,20 @@ var cognomeutente = "Rossiiiiii";
 // inseriscilo in un array con altri cognomi
 lista.push(cognomeutente)
 
+console.log(lista);
+
 // apro ciclo per assegnare la posizione con index
+var posizione
 for (var index = 0; index < lista.length; index++){
+posizione = index
 }
+
 // cognomeutente posizione prima di sort
-console.log(cognomeutente,[index]);
+// console.log(cognomeutente,[index]);
 
 // e stampa la lista ordinata alfabeticamente.
-lista.sort();
-console.log(cognomeutente,[index]);
+// lista.sort();
+// console.log(cognomeutente,[index]);
 
 
 // console.log(lista, cognomeutente, cognomeutente.length);
