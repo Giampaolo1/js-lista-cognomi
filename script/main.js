@@ -14,7 +14,7 @@ var lista = ["Azzopardi", "Zanardi", "Bianchi", "Verdi","Diawara"];
 console.log(lista);
 
 // Chiedi all’utente il cognome,
-var cognomeutente = "Rossiiiiii";
+var cognomeutente = prompt ("Inserisci il tuo cognome");
 
 // inseriscilo in un array con altri cognomi
 lista.push(cognomeutente)
@@ -34,8 +34,8 @@ for (var index = 0; index < lista.length; index++){
   }
 }
 
-// e stampa la lista ordinata alfabeticamente.
-lista.sort();
+// stampa in pagina
+document.getElementById('cognome').innerHTML = cognomeutente + ' è in posizione: ' + classifica;
 
 
 // cognomeutente posizione prima di sort
