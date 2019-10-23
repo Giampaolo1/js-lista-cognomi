@@ -23,11 +23,11 @@ lista.push(cognomeutente)
 for (var index = 0; index < lista.length; index++){
 }
 // cognomeutente posizione prima di sort
-console.log(cognomeutente,index);
+console.log(cognomeutente,[index]);
 
 // e stampa la lista ordinata alfabeticamente.
 lista.sort();
-console.log(cognomeutente,index);
+console.log(cognomeutente,[index]);
 
 
 // console.log(lista, cognomeutente, cognomeutente.length);
