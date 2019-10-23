@@ -14,17 +14,21 @@ var lista = ["Azzopardi", "Zanardi", "Bianchi", "Verdi","Diawara"];
 console.log(lista);
 
 // Chiedi all’utente il cognome,
-var cognomeutente = "Rossi";
+var cognomeutente = "Rossiiiiii";
 
 // inseriscilo in un array con altri cognomi
 lista.push(cognomeutente)
 
-console.log(lista, cognomeutente.length);
+// apro ciclo per assegnare la posizione con index
+for (var index = 0; index < lista.length; index++){
+}
+// cognomeutente posizione prima di sort
+console.log(lista[index],index);
 
 // e stampa la lista ordinata alfabeticamente.
-lista.sort();
+// lista.sort();
 
-console.log(lista, cognomeutente, cognomeutente.length);
+// console.log(lista, cognomeutente, cognomeutente.length);
 
 
 
