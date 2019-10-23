@@ -23,7 +23,7 @@ lista.push(cognomeutente)
 for (var index = 0; index < lista.length; index++){
 }
 // cognomeutente posizione prima di sort
-console.log(lista[index],index);
+console.log(cognomeutente[index],index);
 
 // e stampa la lista ordinata alfabeticamente.
 // lista.sort();
