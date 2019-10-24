@@ -10,31 +10,65 @@
 
 // Lista di cognomi già presenti
 var lista = ["Azzopardi", "Zanardi", "Bianchi", "Verdi","Diawara"];
-
 console.log(lista);
 
 // Chiedi all’utente il cognome,
 var cognomeutente = prompt ("Inserisci il tuo cognome");
+// var cognomeutente = "Rossi";
+
 
 // inseriscilo in un array con altri cognomi
 lista.push(cognomeutente)
-
 console.log(lista, "lista dopo push");
 
+ // non crea una copia
+// var listacopy = lista;
+
+// proviamo con questo //
+var listacopy = lista.slice();
+
+console.log(listacopy, "lista copiata");
+
+
 // e stampa la lista ordinata alfabeticamente.
-lista.sort();
+listacopy.sort();
+
+console.log(listacopy, "listacopy dopo sort");
 
 // apro ciclo per assegnare la posizione con index
-var classifica;
-for (var index = 0; index < lista.length; index++){
-  var posizione = lista[index];
-  if (cognomeutente == posizione) {
-    classifica = index;
-    console.log('posizione mio cognome', classifica);
-  }
+// var classifica;
+// // for (var index = 0; index < listacopy.length; index++){
+// //   var posizione = listacopy[index];
+// //   console.log("posizione: " + posizione);
+// //   if (cognomeutente == posizione) {
+// //     classifica = index;
+// //     console.log('posizione mio cognome', classifica);
+// //   }
+// // }
+// alternativa alla soluzione con ciclo for sopra
+var classifica = listacopy.indexOf(cognomeutente)+1;
+
+
+// STAMPA in pagina
+
+// OUTPUT LISTA listainiziale
+
+for (var i = 0; i < lista.length; i++) {
+  var listaprecedente = document.getElementById('listainiziale').innerHTML;
+   document.getElementById('listainiziale').innerHTML = listaprecedente + "<li>" + lista[i] + "</li>";
+  // document.getElementById('listainiziale').innerHTML += "<li>" + lista[i] + "</li>";
 }
 
-// stampa in pagina
+// OUTPUT LISTA ordinata
+
+for (var j = 0; j < listacopy.length; j++) {
+  var listaprecedenteord = document.getElementById('listaordinata').innerHTML;
+   document.getElementById('listaordinata').innerHTML = listaprecedenteord + "<li>" + listacopy[j] + "</li>";
+}
+
+// document.getElementById('listainiziale').innerHTML = "<li>" + lista + "</li>";
+
+// OUTPUT LISTA finale:
 document.getElementById('cognome').innerHTML = cognomeutente + ' è in posizione: ' + classifica;
 
 
