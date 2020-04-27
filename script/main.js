@@ -8,12 +8,14 @@
 // - array ordinato;
 // -  posizione in cui si trova il cognome dell’utente nell’array ordinato.
 
+function fxStart() {
+
 // Lista di cognomi già presenti
 var lista = ["Azzopardi", "Zanardi", "Bianchi", "Verdi","Diawara"];
 console.log(lista);
 
 // Chiedi all’utente il cognome,
-var cognomeutente = prompt ("Inserisci il tuo cognome");
+var cognomeutente = prompt ("Inserisci il tuo cognome (Case sensitive)");
 // var cognomeutente = "Rossi";
 
 
@@ -70,7 +72,7 @@ for (var j = 0; j < listacopy.length; j++) {
 
 // OUTPUT LISTA finale:
 document.getElementById('cognome').innerHTML = cognomeutente + ' è in posizione: ' + classifica;
-
+}
 
 // cognomeutente posizione prima di sort
 // console.log(cognomeutente,[index]);
