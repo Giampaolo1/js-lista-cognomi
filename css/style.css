@@ -5,3 +5,14 @@
   background-color: lightblue;
   border-radius: 4px;
 }
+
+.listainiziale {
+  color: red;
+}
+.listaordinata {
+  color: green;
+}
+
+.posizione {
+  color: blue;
+}
